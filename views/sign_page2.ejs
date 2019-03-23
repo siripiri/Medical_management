@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Sign In Page1</title>
+        <script src="javascripts/jquery.3.2.1.js"> </script>
+        <link rel="stylesheet" href="stylesheets/sign_page2.css">
+    </head>
+    <body>
+        <div class="container">
+          <header>
+            <h1>Umberlla Corporation</h1>
+          </header>
+            <div class="content1">
+                <h1>Enter patient details...</h1>
+            </div>
+            <form action="/signin" method="post">
+            <div class="group">
+                <input type="text" id="firstname" name="firstname" required/>
+                <label for="firstname">Firstname:</label>
+                <div class="group1">
+                    <input type="text" id="lastname" name="lastname" required/>
+                    <label for="lastname">Lastname:</label>
+                </div>
+            </div>
+            <h3 style="transform:translate(0%,-70%)">Gender:</h3>
+            <div class="group" style="transform:translate(0%,-70%)">
+              <input type="radio" name="gender" value="male"> Male
+              <input type="radio" name="gender" value="female"> Female<br>
+            </div>
+            <h3 style="transform:translate(0%,-70%)">DOB:</h3>
+            <div class="group">
+                <input type="date" name="dob" id="dob" required/>
+                <div class="group" style="margin:100px">
+
+                </div>
+            </div>
+            <div class="group" style="transform:translate(0%,-150%)">
+              <input type="text" name="blood_group" id="blood_group" required/>
+              <label for="blood_group">Blood Group:</label>
+            </div>
+            <h3 style="transform:translate(0%,-100%)">Address:</h3>
+            <div class="group">
+              <input type="text" name="Doorno" id="Doorno" required/>
+              <label for="Doorno">Door No:</label>
+              <div class="group2">
+                <input type="text" name="street" id="street" required/>
+                <label for="street">Street:</label>
+              </div>
+              <div class="group3">
+                <input type="text" name="area" id="area" required/>
+                <label for="area">area:</label>
+              </div>
+            </div>
+            <div class="group" style="transform:translate(0%,-40%)">
+              <input type="text" name="district" id="district" required/>
+              <label for="district">District:</label>
+              <div class="group2">
+                <input type="text" name="city" id="city" required/>
+                <label for="city">City:</label>
+              </div>
+              <div class="group3">
+                <input type="text" name="country" id="country" required/>
+                <label for="country">Country:</label>
+              </div>
+            </div>
+            <div class="group" style="transform:translate(0%,-250%)">
+              <input type="text" name="pincode" id="pincode" required/>
+              <label for="pincode">Pincode:</label>
+            </div>
+            <button type="submit" name="button" style="transform:translate(350%,0%);">Submit</button>
+            </form>
+            <div class="bottom">
+                <a href="#">Help</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </body>
+</html>

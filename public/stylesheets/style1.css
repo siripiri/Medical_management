@@ -1,0 +1,156 @@
+body{
+    background: #0d1521;
+    font-family: tahoma;
+    color: #989898;
+}
+.container{
+    position: relative;
+    margin: 10px 190px 100px 190px;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid dimgrey;
+    border-radius: 5px;
+}
+header{
+  font-family: fantasy;
+}
+header h1{
+  font-size: 45px;
+  text-align: center;
+}
+.content1{
+    margin:  0 0 0 0;
+    text-align: center;
+}
+.content1 h1{
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin: 30px 0 40px 0;
+}
+.group{
+    position: relative;
+    margin: 50px 30px 50px 30px;
+    width: 100%;
+    float: center;
+    transform: translate(30%,0);
+}
+.group p{
+    margin: 15px 0px 0px 0px;
+    font-family: fantasy;
+    font-weight: normal;
+    font-size: 15px;
+}
+.group1{
+    position: relative;
+    margin: 50px 30px 50px 30px;
+    width: 100%;
+    float: center;
+    transform: translate(20%,0);
+}
+.group1 p{
+    margin: 15px 0px 0px 0px;
+    font-family: fantasy;
+    font-weight: normal;
+    font-size: 15px;
+}
+.group1 input[type="email"]{
+  width: 50%;
+}
+.group3{
+  position: relative;
+  margin: 10px 100px 10px 0px;
+  width: 100%;
+  float: center;
+  transform: translate(-5%,0%);
+}
+input{
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 10px 3px 5px 6px;
+    border:1px solid grey;
+    border-radius: 3px;
+    background:#181c22;
+    color: #989898;
+}
+label{
+    color: dimgrey;
+    font-size: 20px;
+    position: absolute;
+    pointer-events:none;
+    top: 5px;
+    left: 10px;
+    transition:0.2s ease all;
+}
+input:focus{
+   text-decoration: none;
+}
+input:focus ~ label, input:valid ~ label 		{
+  top:-53px;
+  font-size:20px;
+  color: #989898;
+  border-color: dimgrey;
+}
+input:focus ~ label, input:valid ~ label 		{
+  top:-30px;
+  font-size:20px;
+  color: #989898;
+  border-color: dimgrey;
+}
+.weak-password {
+  transform: translate(-5%,20%);
+  font-family: fantasy;
+  font-style: normal;
+  color: brown;
+}
+/* strong password */
+.strong-password {
+  transform: translate(5%,20%);
+  font-family: fantasy;
+  font-style: normal;
+}
+/* medium password */
+.medium-password {
+  transform: translate(-10%,0%);
+  font-family: fantasy;
+  font-style: normal;
+  color: brown;
+}
+#password-strength-status {
+padding: 5px 10px;
+color: #989898;
+border-radius:4px;
+margin-top:5px;
+}
+button{
+  font-size: 17px;
+    width: 100px;
+    border: 0;
+    background: black;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid green;
+    padding: 15px 19px;
+    outline: none;
+    color: beige;
+    border-radius: 40px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+button:hover{
+     background-color:green;
+}
+footer{
+  transform:translate(72%,-450%);
+}
+footer a{
+  margin: 0 10 0 10;
+  color: dimgray;
+  text-decoration: none;
+}
+.bottom a{
+  margin: 0 10 0 10;
+  color: dimgray;
+  text-decoration: none;
+}

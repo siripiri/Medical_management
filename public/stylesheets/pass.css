@@ -1,0 +1,59 @@
+body{
+    margin: 100px 100px 100px 100px;
+}
+
+#group{
+    position: relative;
+}
+/*      input type and lable    */
+input[type="password"]{
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 10px 3px 5px 6px;
+    border:1px solid grey;
+    border-radius: 3px;
+}
+label{
+    color: dimgrey;
+    font-size: 18px;
+    position: absolute;
+    pointer-events:none;
+    top: 5px;
+    left: 10px;
+    transition:0.2s ease all;
+}
+input[type="password"]:focus{
+   text-decoration: none;
+}
+input[type="password"]:focus ~ label, input[type="password"]:valid ~ label 		{
+  top:-13px;
+  font-size:18px;
+  color:dodgerblue;
+  background-color: white;
+  border-color: dimgrey;
+}
+/* weak password */
+.weak-password {
+  font-family: fantasy;
+  font-style: normal;
+  color: brown;
+}
+.weak-password p{
+  color: brown;
+}
+/* strong password */
+.strong-password {
+  font-family: sans-serif;
+  font-style: normal;
+  color: green;
+}
+/* medium password */
+.medium-password {
+  font-family: sans-serif;
+  font-style: normal;
+  color: brown;
+}
+#password-strength-status {
+padding: 5px 10px;color: black; border-radius:4px;margin-top:5px;
+}

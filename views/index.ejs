@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> <%= title %> </title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="javascripts/jquery.3.2.1.js"></script>
+    <script>
+      $(window).on('scroll',function(){
+                    if($(window).scrollTop()){
+                        $('nav').addClass('black');
+                    }
+                    else{
+                        $('nav').removeClass('black');
+                    }
+                });
+    </script>
+  </head>
+  <body>
+    <header class="v-header Container">
+      <div class="sec1">
+              <video id="video-bg-elem" width="1280" height="720" autoplay loop muted>
+                <source src="http://localhost:8000/video" type="video/mp4">
+              </video>
+      </div>
+      <div class="header-overlay">
+           </div>
+           <div class="header-content">
+             <% include layouts/nav %>
+             <h1>umbrella corporation</h1>
+               <h3>We care about your health</h3>
+               <p style="transform: translate(45%,1215%)">Reeccon city,Springland,california</p>
+               <p style="transform: translate(80%,1060%)">0422 434 5353</p>
+               <p style="transform: translate(110%,890%)">-contact@ resident_evil.com</p>
+               <p style="transform: translate(70%,650%);">&#9742-</p>
+               <p style="font-size: 30px; transform: translate(92%,250%)">&#9993</p>
+           </div>
+    </header>
+    <img src="images/IMG_7082.JPG" alt="">
+  </body>
+</html>

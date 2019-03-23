@@ -1,0 +1,232 @@
+body{
+    background: #0d1521;
+    font-family: tahoma;
+    color: #989898;
+}
+header{
+  font-family: fantasy;
+}
+header h1{
+  font-size: 45px;
+  text-align: center;
+}
+/*       border    */
+.container{
+    position: relative;
+    margin: 10px 190px 100px 190px;
+    padding: 2px 20px 2px 20px;
+    border: 1px solid dimgrey;
+    border-radius: 5px;
+}
+.container h3{
+    font-weight: 400;
+    font-family: sans-serif;
+    margin: 0 20px 0 30px;
+}
+/*       header part    */
+.header1 img {
+    float: left;
+}
+/*       quots    */
+.header1 p{
+    margin: 0 0 0 0;
+    font-size: 20px;
+    font-family: fantasy;
+    transform: translate(0%,-150%);
+}
+/*       header  content 1   */
+.content1{
+    margin:  0 0 0 0;
+    text-align: center;
+}
+.content1 h1{
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin: 0px 0 40px 0;
+}
+/*   first name :   */
+.group{
+    position: relative;
+    margin: 20px 10px 20px 30px;
+    width: 100%;
+}
+.group p{
+    margin: 15px 0px 0px 0px;
+    font-family: fantasy;
+    font-weight: normal;
+    font-size: 15px;
+}
+.group h3{
+    position: relative;
+    margin: 0 0 0 0;
+    font-weight: 300;
+    top: -12px;
+}
+/*   last name :   */
+.group1{
+    position: relative;
+    transform: translate(40%,-100%);
+}
+/*      Email id       */
+.group4{
+     position: relative;
+     margin: 20px 10px 20px 30px;
+}
+.group4 input[type="text"]{
+    width: 74%;
+}
+.group4 p {
+    font-family: fantasy;
+}
+/*     month     */
+.group6{
+    position: relative;
+    margin: 20px 0px 0px 0px;
+}
+.group6 input[type="text"]{
+    width: 20%;
+}
+/*     date     */
+.group2{
+    position: relative;
+    transform: translate(25%,-100%);
+}
+.group2 input[type="text"]{
+    width: 20%;
+}
+/*      year    */
+.group3{
+    position: relative;
+    transform: translate(50%,-200%);
+}
+.group3 input[type="text"]{
+    width: 20%;
+}
+/*    help    privacy    terms    */
+.bottom{
+    transform: translate(75%,300%);
+}
+.bottom a{
+    margin: 0 10 0 10;
+    color: dimgray;
+    text-decoration: none;
+}
+/*      Next button    */
+.next{
+    transform: translate(70%,0%);
+}
+.next [type="submit"]{
+    text-decoration: none;
+}
+/*      input type and lable    */
+input{
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 10px 3px 5px 6px;
+    border:1px solid grey;
+    border-radius: 3px;
+    background:#181c22;
+    color: #989898;
+}
+label{
+    color: dimgrey;
+    font-size: 20px;
+    position: absolute;
+    pointer-events:none;
+    top: 5px;
+    left: 10px;
+    transition:0.2s ease all;
+}
+input:focus{
+   text-decoration: none;
+}
+input:focus ~ label, input:valid ~ label 		{
+  top:-53px;
+  font-size:20px;
+  color: #989898;
+  border-color: dimgrey;
+}
+input:focus ~ label, input:valid ~ label 		{
+  top:-30px;
+  font-size:20px;
+  color: #989898;
+  border-color: dimgrey;
+}
+/* submit */
+button{
+    padding: 10px;
+    width: 20%;
+    float: left;
+    background: #23282e;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+/*       Responsive   tab size  */
+@media screen and (max-width:1240px){
+    .container{
+        margin: 40px 50px;
+        position: relative;
+    }
+}
+@media screen and (max-width: 800px){
+    .header1 p{
+        transform: translate(0%,0%);
+    }
+}
+/*       Responsive   phone size  */
+@media screen and (max-width: 600px){
+    /*      box         */
+    .container{
+        margin: 5px 5px;
+        padding: 2px 2px 2px 2px;
+        border: none;
+        border-radius: none;
+        position: relative;
+    }
+    /*      header content  */
+    .header1 p{
+        font-size: 20px;
+        transform: translate(3%,-50%);
+    }
+    /*      animated name   */
+    .svg_name{
+        width: 60%;
+        transform: translate(45%,-40%);
+    }
+    /*      Input type    */
+    input{
+        width: 100%;
+    }
+    /*      First name    */
+    .group{
+        position: relative;
+        margin: 20px 20px 20px 20px;
+    }
+    /*      last name     */
+    .group1{
+        display: block;
+        position: relative;
+        margin: 20px 0px 20px 0px;
+        transform: translate(0%,0%);
+    }
+    .group1 input[type="text"]{
+        width: 100%;
+    }
+    /*       Email id       */
+    .group4{
+          position: relative;
+          margin: 20px 20px 20px 20px;
+    }
+    .group4 input[type="text"]{
+        width: 112%;
+    }
+    /*      bottom     */
+    .bottom{
+        display: none;
+    }
+}
